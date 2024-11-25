@@ -55,6 +55,10 @@ body {
     @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
   }
 
+  .absolute-center-dis {
+    @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hover:border-2 hover:border-yellow-300;
+  }
+
   .flex-center {
     @apply flex justify-center items-center;
   }
