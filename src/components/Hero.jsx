@@ -4,6 +4,7 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import Loader from "./Loader";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -82,14 +83,16 @@ useEffect(() => {
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
 
-    {isLoading && (
-      <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+   {/* <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
         <div className="three-body">
           <div className="three-body__dot"/>
           <div className="three-body__dot"/>
           <div className="three-body__dot"/>
         </div>
-      </div>
+      </div> */}
+    {isLoading && (
+   
+      <Loader/>
     )}
       <div
         id="video-frame"
